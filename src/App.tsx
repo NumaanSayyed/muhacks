@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header */}
-      <header className="bg-indigo-600 text-white p-5 shadow-lg">
+      <header className="bg-indigo-700 text-white p-5 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">My Application</h1>
           <div>
@@ -17,7 +17,9 @@ export default function App() {
               </SignInButton>
             </SignedOut>
             <SignedIn>
+            <div className="transform scale-150"> {/* Scale to 150% */}
               <UserButton />
+            </div>
             </SignedIn>
           </div>
         </div>
